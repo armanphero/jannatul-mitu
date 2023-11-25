@@ -22,6 +22,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --primary: #5e3bee;
   --heading-color: #282938;
@@ -206,7 +210,7 @@ p {
 .navbar--items>ul {
   list-style: none;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 42.667px;
   text-decoration: none;
 }
@@ -223,7 +227,11 @@ a.whatsapp {
   gap: 8px;
 }
 
-svg.svg-inline--fa.fa-whatsapp {
+.navbar--items .whatsapp-for-mobail {
+  display: none;
+}
+
+.navbar svg.svg-inline--fa.fa-whatsapp {
   background: green;
   color: white;
   font-size: 30px;
@@ -599,8 +607,8 @@ a.order-now-btn:hover {
 
 span.carousel-control-prev-icon,
 span.carousel-control-next-icon {
-  color: red;
   font-size: 30px;
+  color: black;
 }
 
 button.carousel-control-prev {
@@ -624,6 +632,86 @@ button.carousel-control-next {
 
 
 /* carousel testimonial end */
+
+/* contact */
+.social-contact {
+  /* height: 100%; */
+  margin-top: auto;
+}
+.single-social-contact {
+  display: flex;
+  gap: 20px;
+}
+
+.single-social-contact svg {
+  font-size: 30px;
+  padding: 15px;
+}
+
+.single-social-contact span {
+  border-radius: 10px;
+}
+
+.whatsapp-contact,
+.email-contact {
+  background: #e6e5ff;
+  color: black;
+}
+
+.facebook-contact,
+.linkdin-contact {
+  background-color: #ffe0cc;
+  color: #ff6400;
+}
+
+.contact-link a {
+  color: #797979;
+}
+
+.contact-icon {
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.contact-icon:hover {
+  transform: scale(.9, .9);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form {
+  padding: 8%;
+  background: #eeedfe;
+  border-radius: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input.contact-form-submit {
+  background: #28214c;
+  color: #fff;
+  transition: .3s;
+}
+
+input.contact-form-submit:hover {
+  background-color: #ff6400;
+}
+
+/* contact end */
 
 /* My Portfolio Starts */
 .portfolio--section {
@@ -1013,6 +1101,11 @@ input[type="checkbox"] {
   a.whatsapp {
     display: none;
   }
+
+  .navbar--items.active a.whatsapp {
+    display: inherit;
+    display: flex;
+  }
 }
 
 /* Hamburger menu  */
@@ -1054,7 +1147,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255);
-    top: -20rem;
+    top: -23rem;
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
@@ -1105,6 +1198,12 @@ input[type="checkbox"] {
 .content-container {
   width: 80%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .prices-container {
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1170,6 +1269,23 @@ input[type="checkbox"] {
 
   button.carousel-control-next {
     right: -7%;
+  }
+
+  .whatsapp-contact,
+  .facebook-contact {
+    background: #e6e5ff;
+    color: black;
+  }
+
+  .email-contact,
+  .linkdin-contact {
+    background-color: #ffe0cc;
+    color: #ff6400;
+  }
+
+  .contact-form {
+    padding: 14% 8%;
+    margin-top: 6%;
   }
 }
 

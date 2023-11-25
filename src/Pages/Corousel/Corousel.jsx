@@ -5,7 +5,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 const Corousel = () => {
     const { testimonial } = data;
     return (
-        <section className='section-spacing testimonial-section'>
+        <section className='section-spacing testimonial-section' id='testimonial'>
             <div className='content-container'>
             <h2 className='fs-1 fw-medium my-4 line-height-medium text-center'>Customers Feedback</h2>
                 <div id="carouselExampleInterval" class="carousel slide carousel-big-screen" data-bs-ride="carousel">
