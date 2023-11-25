@@ -5,7 +5,7 @@ export default function HeroSection() {
         <div className="hero--section--content--box">
           <div className="hero--section--content">
             <p className="unlock-text">Unlock Strategic Marketing with marketer Mitu</p>
-            <h2 className="">Hi, I'm Jannatul Mitu</h2>
+            <h2 className="">Hi, I'm Jannat Mitu</h2>
             {/* <h3></h3> */}
             <h4>A Digital Marketing Strategist . Welcome to the hub of digital innovation!</h4>
             <p>Ready to take your brand to new heights?  From engaging Facebook and Instagram ad campaigns that captivate your audience to optimizing YouTube channels for maximum visibility, and implementing data-driven Google marketing solutions - I'm here to elevate your brand's digital presence.</p>
