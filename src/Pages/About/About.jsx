@@ -2,13 +2,9 @@ import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faUsersLine } from '@fortawesome/free-solid-svg-icons'
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import Aos from 'aos';
-import 'aos/dist/aos.css'
 
 const About = () => {
-    useEffect(() => {
-        Aos.init({ duration: 1000 });
-    }, [])
+    
     return (
         <section className='about-section' id='AboutMe'>
             <div className='content-container row row-cols-1 row-cols-xl-2 g-4 align-items-center'>

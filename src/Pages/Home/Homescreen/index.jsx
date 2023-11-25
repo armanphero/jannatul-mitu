@@ -8,9 +8,14 @@ import ContactMe from "../ContactMe";
 import Footer from "../Footer";
 import HeroSection from "../HeroSection";
 import MyPortfolio from "../MyPortfolio";
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 export default function Home() {
-  
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+}, [])
   return (
     <>
       <HeroSection />
