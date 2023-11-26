@@ -1282,6 +1282,9 @@ input[type="checkbox"] {
   .footer--container {
     margin-top: 8%;
   }
+  .section-spacing {
+    padding: 10% 0;
+}
 }
 
 /* @media screen and (max-width: 1200px) {
