@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer--content--container">
           <p className="footer--content">Made with 💖 by Arman</p>
           <div className="footer--social--icon">
-            <ul>
+            <ul className="p-0">
               <li>
                 <Link
                   activeClass="navbar--active-content"
@@ -34,19 +34,6 @@ function Footer() {
                   className="text-sm"
                 >
                   Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  activeClass="navbar--active-content"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  to="Cookies_Settings"
-                  className="text-sm"
-                >
-                  Cookies Settings
                 </Link>
               </li>
             </ul>

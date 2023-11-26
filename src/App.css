@@ -200,9 +200,11 @@ p {
   padding: 15px 0;
   z-index: 2;
 }
+
 .logo-img img {
   width: 100px;
 }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -1082,10 +1084,8 @@ input[type="checkbox"] {
     gap: 10px;
   }
 
-  .footer--social--icon>ul,
-  .footer--items>ul {
-    padding: 0;
-    align-items: center;
+  .footer--social--icon>ul {
+    gap: 10px;
   }
 
 
