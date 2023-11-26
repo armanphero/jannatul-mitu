@@ -30,7 +30,7 @@ const Services = () => {
         }
     ]
     return (
-        <section className='services-section section-spacing'>
+        <section className='services-section section-spacing' id='services-section'>
             <div className='content-container'>
                 <div className='service-text text-center'>
                     <p className="unlock-text mb-2" style={{ display: 'inline-block' }}>OUR SERVICES</p>
