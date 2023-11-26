@@ -36,7 +36,7 @@ const Contact = () => {
                     <div className='contact-info' data-aos="zoom-in">
                         <div className='contact-info-text'>
                             <p className="unlock-text mb-2" style={{ display: 'inline-block' }}>CONTACT US</p>
-                            <h2 className='fs-1 fw-medium my-4 line-height-medium'>Get In Touch With Marketer Emon</h2>
+                            <h2 className='fs-1 fw-medium my-4 line-height-medium'>Get In Touch With Marketer Mitu</h2>
                             <p className='lead mb-5'>Connect with Marketer Mitu. Reach Out Today for Expert Guidance in Elevating Your Business. Contact Us to Unleash the Power of Strategic Marketing Strategies.</p>
                             <div className='social-contact row row-cols-1 row-cols-md-2 g-4'>
                                 <div className='single-social-contact'>
