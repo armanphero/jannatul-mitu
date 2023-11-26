@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {

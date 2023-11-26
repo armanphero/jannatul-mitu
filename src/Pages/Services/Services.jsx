@@ -39,7 +39,7 @@ const Services = () => {
                 </div>
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5'>
                     <div className='col'>
-                        <div className='single-service service-overview'>
+                        <div className='single-service service-overview' data-aos="fade-up">
                             <img src="./img/services/service.jpg" alt="" />
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const Service = ({ service }) => {
     const { img, service_name, service_description, class_name } = service;
     return (
         <div className='col'>
-            <div className='single-service'>
+            <div className='single-service' data-aos="fade-up">
                 <div className='single-service-container'>
                     <img src={img} alt="" />
                     <h5 className='mb-2 text-dark'>{service_name}</h5>

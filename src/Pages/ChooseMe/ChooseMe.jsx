@@ -24,7 +24,7 @@ const ChooseMe = () => {
                         <li>Marketing Try Now!</li>
                     </ul>
                 </div>
-                <div className='choose-element choose-element-active p-5 m-0 col'>
+                <div className='choose-element choose-element-active p-5 m-0 col' data-aos="zoom-in">
                     <FontAwesomeIcon icon={faHandHoldingDollar} className='text-white' />
                     <h2 className='my-2'>Affordable Price For You</h2>
                     <ul className='m-0'>

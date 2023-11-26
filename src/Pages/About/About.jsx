@@ -9,12 +9,12 @@ const About = () => {
         <section className='about-section' id='AboutMe'>
             <div className='content-container row row-cols-1 row-cols-xl-2 g-4 align-items-center'>
                 <div className='col'>
-                    <div className='about-img-container' data-aos="fade-right">
+                    <div className='about-img-container' data-aos="fade-up">
                         <img src="./img/female-on-desk.jpg" alt="" />
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='about-description' data-aos="fade-left">
+                    <div className='about-description' data-aos="fade-up">
                         <p className="unlock-text inline-block">About Marketer Mitu Socialzy</p>
                         <h2 className='fs-1 fw-medium my-4 line-height-medium'>3+ Years Of Experiences In Social Media Marekting</h2>
                         {/* <h2></h2> */}

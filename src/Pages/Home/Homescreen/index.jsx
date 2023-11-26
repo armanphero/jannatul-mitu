@@ -11,6 +11,7 @@ import MyPortfolio from "../MyPortfolio";
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import Navbar from "../../Navbar/Navbar";
 
 export default function Home() {
   useEffect(() => {

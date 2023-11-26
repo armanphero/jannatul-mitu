@@ -37,7 +37,7 @@ const Prices = () => {
                         </div>
                     </div>
                     <div className='col'>
-                        <div className='single-price single-price-active'>
+                        <div className='single-price single-price-active' data-aos="zoom-in-down">
                             <div className='single-price-info'>
                                 <span className='price-brand-icon'><FontAwesomeIcon icon={faGoogle} /></span>
                                 <h5>Google Marketing</h5>

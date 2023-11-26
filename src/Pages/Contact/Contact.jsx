@@ -33,7 +33,7 @@ const Contact = () => {
         <section className='content-container contact-section' id='contact-section'>
             <div className='row row-cols-1 row-cols-xl-2 g-4'>
                 <div className='col'>
-                    <div className='contact-info'>
+                    <div className='contact-info' data-aos="zoom-in">
                         <div className='contact-info-text'>
                             <p className="unlock-text mb-2" style={{ display: 'inline-block' }}>CONTACT US</p>
                             <h2 className='fs-1 fw-medium my-4 line-height-medium'>Get In Touch With Marketer Emon</h2>
@@ -72,7 +72,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='contact-form'>
+                    <div className='contact-form' data-aos="zoom-in">
                         <form ref={form} onSubmit={sendEmail}>
                             <input type="text" name="from_name"  required placeholder='Your Name' id='user-name' />
                             <input type='email' name="from_email" required placeholder='Your Email' id='user-email' />
