@@ -11,7 +11,7 @@ export default function HeroSection() {
             <h4>A Digital Marketing Strategist . Welcome to the hub of digital innovation!</h4>
             <p>Ready to take your brand to new heights?  From engaging Facebook and Instagram ad campaigns that captivate your audience to optimizing YouTube channels for maximum visibility, and implementing data-driven Google marketing solutions - I'm here to elevate your brand's digital presence.</p>
           </div>
-          <button className="btn btn-primary">Get In Touch</button>
+          <a className="btn btn-primary mt-5" href="#contact-section">Get In Touch</a>
         </div>
         <div className="hero--section--img">
           <div className="hero-img-container">

@@ -200,7 +200,9 @@ p {
   padding: 15px 0;
   z-index: 2;
 }
-
+.logo-img img {
+  width: 100px;
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -225,10 +227,6 @@ a.whatsapp {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.navbar--items .whatsapp-for-mobail {
-  display: none;
 }
 
 .navbar svg.svg-inline--fa.fa-whatsapp {
@@ -638,6 +636,7 @@ button.carousel-control-next {
   /* height: 100%; */
   margin-top: auto;
 }
+
 .single-social-contact {
   display: flex;
   gap: 20px;
@@ -686,7 +685,7 @@ button.carousel-control-next {
 .contact-form {
   padding: 8%;
   background: #eeedfe;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .contact-form input,
@@ -927,13 +926,9 @@ input[type="checkbox"] {
 /* Footer Start */
 /* Footer Starts */
 .footer--container {
-  display: flex;
-  padding: 106.667px 85.333px;
-  flex-direction: column;
-  align-items: flex-start;
   background: var(--bg-shade);
-  align-items: center;
-  align-self: stretch;
+  margin-top: 5%;
+  padding: 5% 0;
 }
 
 .footer--link--container {
@@ -966,7 +961,6 @@ input[type="checkbox"] {
 }
 
 .divider {
-  margin: 106px 0 42.67px;
   height: 1.333px;
   width: 100%;
   background: rgba(40, 41, 56, 0.55);
@@ -976,7 +970,7 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;
+  padding-top: 2%;
 }
 
 .footer--content {
@@ -1094,9 +1088,6 @@ input[type="checkbox"] {
     align-items: center;
   }
 
-  .divider {
-    margin: 20px;
-  }
 
   a.whatsapp {
     display: none;
@@ -1284,8 +1275,12 @@ input[type="checkbox"] {
   }
 
   .contact-form {
-    padding: 14% 8%;
+    padding: 14% 5%;
     margin-top: 6%;
+  }
+
+  .footer--container {
+    margin-top: 8%;
   }
 }
 

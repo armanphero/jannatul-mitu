@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -39,8 +38,8 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="navbar-container content-container">
-        <div className="py-4 logo-img">
-          <img src="./img/logo1.png" alt="Logoipsum" />
+        <div className="logo-img">
+          <img src="./img/logo5.png" alt="Logoipsum" />
         </div>
         <a
           className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -121,12 +120,6 @@ function Navbar() {
               >
                 Contact
               </Link>
-            </li>
-            <li>
-              <a href="https://api.whatsapp.com/send?phone=01629167685 " className="whatsapp text-success whatsapp-for-mobail" target="_blank">
-                <FontAwesomeIcon icon={faWhatsapp} />
-                <span>01629167685</span>
-              </a>
             </li>
           </ul>
         </div>

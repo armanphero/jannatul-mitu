@@ -87,7 +87,7 @@ const Corousel = () => {
 
 
 const SingleTestimonial = ({ item, index }) => {
-    console.log(item, index);
+    // console.log(item, index);
     return (
         <div key={index} className="testimonial--section--card">
             <div className="testimonial--section--card--review">

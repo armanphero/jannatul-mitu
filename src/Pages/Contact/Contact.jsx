@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
-// https://www.facebook.com/profile.php?id=61550255662761
-// 01629167685
-// https://www.linkedin.com/in/jannatul-ferdous-337019267/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwAR2kWiTISqm62vcQOOgLKAr4_B4C9JSYeyjxkmc-_dmOu1kpn0z5g8RB1no
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
+    const [state, ChangeState] = useState(false);
+    const notify = () => toast("successfully sent!");
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_vz3s2sn', 'template_qmc9uwq', form.current, '9gSfZZ2Cnw0WAd75X')
+            .then((result) => {
+                notify();
+                console.log(result.text);
+                ChangeState(!state);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+    useEffect(() => {
+        document.getElementById('user-name').value = '';
+        document.getElementById('user-email').value = '';
+        document.getElementById('user-message').value = '';
+    }, [state])
+
     return (
-        <section className='content-container contact-section'>
+        <section className='content-container contact-section' id='contact-section'>
             <div className='row row-cols-1 row-cols-xl-2 g-4'>
                 <div className='col'>
                     <div className='contact-info'>
@@ -50,15 +73,16 @@ const Contact = () => {
                 </div>
                 <div className='col'>
                     <div className='contact-form'>
-                        <form action="">
-                            <input type="text" required placeholder='Your Name' />
-                            <input type='email' required placeholder='Your Email' />
-                            <textarea name="" id="" cols="30" rows="5" required placeholder='Your Message'></textarea>
-                            <input type="submit" value={'Send Message'} className='contact-form-submit' />
+                        <form ref={form} onSubmit={sendEmail}>
+                            <input type="text" name="from_name"  required placeholder='Your Name' id='user-name' />
+                            <input type='email' name="from_email" required placeholder='Your Email' id='user-email' />
+                            <textarea name="message" cols="30" rows="5" required placeholder='Your Message' id='user-message'></textarea>
+                            <input type="submit" value="Send" className='contact-form-submit' id='sendEmail' />
                         </form>
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </section>
     );
 };
