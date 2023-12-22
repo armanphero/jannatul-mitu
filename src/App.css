@@ -199,6 +199,7 @@ p {
   display: block;
   padding: 15px 0;
   z-index: 2;
+  border-top: 3px solid #50497b;
   border-bottom: 3px solid #50497b;
 }
 
@@ -716,9 +717,14 @@ input.contact-form-submit:hover {
 /* contact end */
 
 /* My Portfolio Starts */
+.google--section--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 46px;
+}
+
 .portfolio--section {
   display: flex;
-  padding: 112px 85px;
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
@@ -739,28 +745,36 @@ input.contact-form-submit:hover {
 }
 
 .portfolio--section--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 42.6px;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio--section--container .portfolio--section--img {
+  height: 600px;
 }
 
 .portfolio--section--img {
   border-radius: 8px;
   width: 100%;
+  text-align: center;
+  /* background: #9b9af3; */
+  overflow: hidden;
+  padding: 20px;
 }
 
 .portfolio--section--img>img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio--section--card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
+  flex: 1 0;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -1192,9 +1206,29 @@ input[type="checkbox"] {
   margin: 0 auto;
 }
 
+/* modal css */
+.modal-body img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* modal css ends */
+
 @media screen and (max-width: 992px) {
   .prices-container {
     gap: 30px;
+  }
+
+  .portfolio--section--container {
+    grid-template-columns: 1;
+  }
+
+  .google--section--container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio--section--container .portfolio--section--img {
+    height: 350px;
   }
 }
 
@@ -1283,9 +1317,10 @@ input[type="checkbox"] {
   .footer--container {
     margin-top: 8%;
   }
+
   .section-spacing {
     padding: 10% 0;
-}
+  }
 }
 
 /* @media screen and (max-width: 1200px) {

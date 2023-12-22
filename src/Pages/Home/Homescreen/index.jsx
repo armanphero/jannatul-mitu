@@ -7,13 +7,15 @@ import Services from "../../Services/Services";
 import ContactMe from "../ContactMe";
 import Footer from "../Footer";
 import HeroSection from "../HeroSection";
-import MyPortfolio from "../MyPortfolio";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import Navbar from "../../Navbar/Navbar";
+import MyPortfolio from "../../MyPortfolio/MyPortfolio";
+import Modal from "../../Modal/Modal";
 
 export default function Home() {
+  const [modalImg, setModalImg] = useState('');
   useEffect(() => {
     Aos.init({ duration: 1000 });
 }, [])
@@ -23,12 +25,13 @@ export default function Home() {
       <ChooseMe></ChooseMe>
       <About></About>
       <Services></Services>
-      <Prices></Prices>
+      <MyPortfolio setModalImg={setModalImg} />
       <Corousel></Corousel>
+      <Prices></Prices>
       <Contact></Contact>
-      {/* <MyPortfolio /> */}
       {/* <ContactMe /> */}
       <Footer />
+      <Modal modalImg={modalImg} />
     </>
   );
 }
